@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box  ;
+}
+.container{
+    border: 4px solid red;
+    background-color: rgb(228, 228, 47);
+    width: 600px;
+    height: 800px;
+    display: grid;
+    grid-template-rows: 80px 1fr 50px;
+    grid-template-columns:150px 440px ;
+    grid-gap: 10px;
+
+    grid-template-areas: 
+        "hd hd"
+        "side main"
+        "ft ft"
+    
+    ;
+}
+.box{
+    border:  3px solid black;
+    background-color: aqua;
+    width: 100%;
+}
+#box1{
+    grid-area: hd;
+}
+#box2{
+    grid-area: side;
+}
+#box3{
+    grid-area: main;
+}
+#box4{
+    grid-area: ft;
+}
